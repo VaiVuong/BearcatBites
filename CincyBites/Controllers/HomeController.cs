@@ -18,7 +18,12 @@ namespace CincyBites.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+
+        public IActionResult ExploreBites()
         {
             return View();
         }

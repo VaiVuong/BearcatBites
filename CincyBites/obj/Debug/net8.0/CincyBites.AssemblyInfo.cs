@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CincyBites")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04eca72fc7673a92208696bfe7845a735507a14a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcf6ef58341fa9d7afb5111c4e1736ccfb87cf8d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CincyBites")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CincyBites")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,21 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="hero-section text-center my-4">
+    <h1 class="display-4 fw-bold">Welcome to CincyBites</h1>
+    <p class="lead mt-3">
+        CincyBites is a blog dedicated to exploring the vibrant and diverse food scene
+        of Cincinnati. From authentic Mexican taquerias in Price Hill to Ethiopian
+        kitchens in Clifton, Vietnamese pho spots in Sharonville to Indian buffets in
+        Mason — Cincinnati's neighborhoods are brimming with flavors from around the world.
+    </p>
+    <p class="mt-2">
+        Our mission is to shine a spotlight on the local restaurants and eateries that
+        represent the rich cultural tapestry of our city. Whether you're a lifelong
+        Cincinnatian or just passing through, there's always a new bite to discover.
+    </p>
+    <a class="btn btn-pawpaw btn-lg mt-4 px-5" asp-controller="Home" asp-action="ExploreBites">
+        🍽️ Explore Foods
+    </a>
 </div>
