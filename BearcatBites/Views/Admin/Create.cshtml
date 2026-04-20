@@ -1,0 +1,50 @@
+@model BearcatBites.Models.FoodItem
+@{
+    ViewData["Title"] = "Add New Entry";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h1>Add New Entry</h1>
+            <hr />
+
+            <form method="post" asp-action="Create" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label asp-for="Type" class="form-label">Entry Type</label>
+                    <select asp-for="Type" class="form-select" required>
+                        <option value="">-- Select Type --</option>
+                        <option value="0">Bite (Food)</option>
+                        <option value="1">Sip (Drink)</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Item Name</label>
+                    <input asp-for="Name" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Restaurant" class="form-label">Restaurant</label>
+                    <input asp-for="Restaurant" class="form-control" required />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label">Description</label>
+                    <textarea asp-for="Description" class="form-control" rows="4" required></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="imageFile" class="form-label">Image (PNG)</label>
+                    <input type="file" class="form-control" id="imageFile" name="imageFile" accept=".png" />
+                    <small class="text-muted">Upload a PNG image for this entry</small>
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="@Url.Action("ManageEntries", "Admin")" class="btn btn-secondary">Cancel</a>
+                    <button type="submit" class="btn btn-primary">Create Entry</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

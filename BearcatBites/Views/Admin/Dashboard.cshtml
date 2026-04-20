@@ -1,0 +1,45 @@
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Admin Dashboard</h1>
+            <p class="text-muted">Welcome to the BearcatBites administration panel</p>
+            <hr />
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Manage Entries</h5>
+                    <p class="card-text">Add, edit, or remove Bites and Sips entries</p>
+                    <a href="@Url.Action("ManageEntries", "Admin")" class="btn btn-primary">Manage Entries</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Add New Entry</h5>
+                    <p class="card-text">Create a new food or drink entry</p>
+                    <a href="@Url.Action("Create", "Admin")" class="btn btn-success">Add Entry</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Logout</h5>
+                    <p class="card-text">Exit the admin panel</p>
+                    <a href="@Url.Action("Logout", "Admin")" class="btn btn-secondary">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
