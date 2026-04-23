@@ -17,34 +17,34 @@ namespace BearcatBites.Data
             {
                 new FoodItem
                 {
-                    Name = "Pho",
+                    Name = "Pho Tai",
                     Restaurant = "Pho Lang Thang",
                     Description = "Traditional Vietnamese beef noodle soup with rich, aromatic broth and fresh herbs.",
-                    ImagePath = "/images/items/sample-pho.jpg",
+                    ImagePath = "/images/items/086a4fa3-b957-45c2-8c5f-7f2f19009c30.png",
                     Type = ItemType.Bite
                 },
                 new FoodItem
                 {
-                    Name = "Skyline Chili",
-                    Restaurant = "Skyline Chili",
-                    Description = "Cincinnati-style chili served over spaghetti, topped with cheese and onions.",
-                    ImagePath = "/images/items/sample-skyline.jpg",
+                    Name = "Vietnamese Spring Rolls",
+                    Restaurant = "Pho Kimmy",
+                    Description = "Rice noodles with beef, shrimp, and spring vegetables wrapped in a rice paper. Served with nouc mam dipping sauce",
+                    ImagePath = "/images/items/2bf3b1cc-4abf-4487-815a-0b1bcf2f0ce8.png",
                     Type = ItemType.Bite
                 },
                 new FoodItem
                 {
-                    Name = "Boba Tea",
+                    Name = "Osmanthus Tea",
                     Restaurant = "Kung Fu Tea",
-                    Description = "Sweet milk tea with chewy tapioca pearls, a refreshing bubble tea experience.",
-                    ImagePath = "/images/items/sample-boba.jpg",
+                    Description = "Fragrant Floral Tea, served hot.",
+                    ImagePath = "/images/items/26e04506-aef8-42ba-a7ab-bd401a25b02c.png",
                     Type = ItemType.Sip
                 },
                 new FoodItem
                 {
-                    Name = "Craft Beer",
-                    Restaurant = "Rhinegeist Brewery",
-                    Description = "Local craft beer from one of Cincinnati's most popular breweries.",
-                    ImagePath = "/images/items/sample-beer.jpg",
+                    Name = "Panipuri",
+                    Restaurant = "Masala Theory Indian Restaurant",
+                    Description = "Hollow, crispy fried shell (puri) filled with a mixture of spiced potatoes, chickpeas, and onions, then submerged in tangy, flavored water (pani)",
+                    ImagePath = "/images/items/542548a3-24c2-4716-a38c-e5d4217acbf3.png",
                     Type = ItemType.Sip
                 }
             };
