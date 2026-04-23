@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BearcatBites")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea5eebf37781534bbdc8a0acd4d8995f58d8d057")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad0d9c278fd116f0a6285c63c2d29016cd436809")]
 [assembly: System.Reflection.AssemblyProductAttribute("BearcatBites")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BearcatBites")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
