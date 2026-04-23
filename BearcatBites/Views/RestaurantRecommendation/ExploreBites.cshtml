@@ -1,0 +1,47 @@
+@model IEnumerable<BearcatBites.Models.FoodItem>
+@{
+    ViewData["Title"] = "Explore Bites";
+}
+
+<div class="explore-header text-center py-5" style="background-color: #f5f0e8;">
+    <h1 class="fw-bold">Explore Bites</h1>
+    <p class="text-muted">Discover the diverse food scene of Cincinnati — one bite at a time.</p>
+</div>
+
+<div class="container my-5">
+    <div class="row g-4">
+        @if (Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        @if (!string.IsNullOrEmpty(item.ImagePath))
+                        {
+                            <img src="@item.ImagePath" class="card-img-top" alt="@item.Name" style="height: 250px; object-fit: cover;" />
+                        }
+                        else
+                        {
+                            <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
+                                <span class="text-muted">No Image</span>
+                            </div>
+                        }
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Name</h5>
+                            <p class="card-text text-muted">@item.Restaurant</p>
+                            <p class="card-text">@item.Description</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-12">
+                <div class="alert alert-info text-center">
+                    <p class="mb-0">Food posts coming soon. Stay tuned!</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

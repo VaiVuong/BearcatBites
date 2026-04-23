@@ -1,0 +1,107 @@
+/* ── Paw Paw Palette ──
+   White plate  : #ffffff
+   Flesh yellow : #f0c75e  (buttons / accents)
+   Skin green   : #5b7d2e  (navbar / footer)
+   Light cream  : #fdf8e8  (hero background tint)
+*/
+
+:root {
+  --pp-green: #5b7d2e;
+  --pp-green-light: #6f9a38;
+  --pp-yellow: #f0c75e;
+  --pp-yellow-hover: #ddb444;
+  --pp-cream: #fdf8e8;
+  --pp-white: #ffffff;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: var(--pp-white);
+  color: #333;
+}
+
+/* ── Navbar ── */
+.navbar-bearcatbites {
+  background-color: var(--pp-green) !important;
+}
+
+.navbar-bearcatbites .navbar-brand,
+.navbar-bearcatbites .nav-link {
+  color: var(--pp-white) !important;
+}
+
+.navbar-bearcatbites .nav-link:hover,
+.navbar-bearcatbites .nav-link:focus {
+  color: var(--pp-yellow) !important;
+}
+
+.navbar-bearcatbites .navbar-toggler {
+  border-color: rgba(255,255,255,.4);
+}
+
+.navbar-bearcatbites .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ── Hero section (used on Index) ── */
+.hero-section {
+  background-color: var(--pp-cream);
+  padding: 3rem 1rem;
+  border-radius: .5rem;
+}
+
+/* ── Buttons ── */
+.btn-pawpaw {
+  background-color: var(--pp-yellow);
+  color: #333;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-pawpaw:hover,
+.btn-pawpaw:focus {
+  background-color: var(--pp-yellow-hover);
+  color: #222;
+}
+
+.btn-pawpaw-outline {
+  background-color: transparent;
+  color: var(--pp-green);
+  border: 2px solid var(--pp-green);
+  font-weight: 600;
+}
+
+.btn-pawpaw-outline:hover,
+.btn-pawpaw-outline:focus {
+  background-color: var(--pp-green);
+  color: var(--pp-white);
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem var(--pp-green-light);
+}
+
+/* ── Footer ── */
+.footer-bearcatbites {
+  background-color: var(--pp-green);
+  color: rgba(255,255,255,.85);
+}
+
+.footer-bearcatbites a {
+  color: var(--pp-yellow);
+}
