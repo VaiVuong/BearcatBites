@@ -8,7 +8,6 @@ Food and Drink recommendation for around the UC area built on ASP.NET Core MVC
 * **Admin Panel** - Secure admin interface to manage entries (add, edit, delete)
 * **Database Persistence** - SQL Server LocalDB with Entity Framework Core
 * **Image Upload** - Support for food/drink images
-* **Responsive Design** - Bootstrap 5 with custom Cincinnati-themed styling
 
 ## Tech Stack
 * **Framework:** ASP.NET Core 8.0 MVC
@@ -16,10 +15,9 @@ Food and Drink recommendation for around the UC area built on ASP.NET Core MVC
 * **Database:** SQL Server LocalDB
 * **ORM:** Entity Framework Core 8.0
 * **Frontend:** Bootstrap 5, HTML, CSS
-* **Authentication:** Session-based admin authentication
 
 ## Prerequisites
-* .NET 8 SDK - [Download here](https://dotnet.microsoft.com/download/dotnet/8.0)
+* .NET 8 SDK
 * Visual Studio 2022 (recommended) or VS Code
 * SQL Server LocalDB (included with Visual Studio)
 
